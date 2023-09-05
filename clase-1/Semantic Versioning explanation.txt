@@ -1,0 +1,16 @@
+VEASE ARCHIVO package.json
+
+1.0.0 --> SEMANTIC VERSION
+X.Y.Z --> X la MAJOR y es cuando se rompe la compatibilidad hacia atrás
+X.Y.Z --> Y la MINOR y es cuando se añaden nuevas funcionalidades
+X.Y.Z --> Z la PATCH y es cuando se arreglan bugs
+
+Cuando trabajamos con dependencias en NODEJS, tenemos que diferenciar 2 tipos de dependencias:
+    1.- De producción
+        Nuestra aplicación las necesita para funcionar
+    2.- De Desarrollo
+        Son iguales de importantes pero que no son de producción.
+        Al instalarlas con npm se debe de indicar que son de tipo Development, como el siguiente ejemplo
+        'npm install standard -D'
+        Al indicar esto, si nos fijamos en el package.json, nos ha separado las depenencias que son de producción, 
+        de los que son de Desarrollo

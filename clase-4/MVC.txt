@@ -1,0 +1,22 @@
+M (MODELO) {
+  El modelo representa la lógica del negocio, la estructura de datos, las reglas que tiene el negocio de forma interna.
+  El que se encarga, por ejemplo, de acceder a la BD, o de actualizar la información correctamente...
+}
+
+C (Controlador) {
+  Es el que actua como un intermediario entre el Modelo y la Vista, el que está respondiendo a las entradas del usuario,
+  se encarga de responder, ver esas entradas, tratarlas y ver si tiene que solicitar al modelo, hacer operaciones, etc.
+}
+
+V (Vista) {
+  Su función es poder interactuar, representar la interfaz que el usuario podrá utilizar, presentarle los datos, enviar las acciones.
+  Desde la Vista vamos a poder enviar las acciones que queremos hacer.
+}
+
+Para que funciones las 3 partes correctamente, tienen que interactuar entre ellas de alguna forma.
+0/4 --> El Modelo envia los datos al Controlador
+1r --> El Controlador inicia la Vista
+2n --> La Vista enviará acciones al Controlador
+3r --> Pide al Modelo ya sea leer/modificar los datos
+
+Desde la Vista no te puedes comunicar con el Modelo, de forma directa. Siempre se pasa desde el Controlador.
