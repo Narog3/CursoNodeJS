@@ -1,0 +1,8 @@
+commonJS (clásico): {
+  require
+  module.exports
+}
+
+ESModules (moderno y recomendado): {
+  import/export
+}
